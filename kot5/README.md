@@ -1,6 +1,8 @@
-# KoT5
+# KoT5(Tensorflow)
+반드시 사전학습에 사용된 모델 버전(t5==0.64, mesh_tensorflow==0.1.17)를 설치해야함
 
 ##Setup
+
 ```
 conda install cudnn==8.2.1
 pip install -r requirements.txt
@@ -8,7 +10,15 @@ pip install -r requirements.txt
 
 
 ##Usage
-
+###Options
+`--module_import`: task파일(데이터로드, 전처리, 매트릭 함수 등 포함) 경로 \
+`--model_dir`: tensorflow 버전 t5 모델 경로 \
+`--gin_param="MIXTURE_NAME`: task 파일에서 등록한 task 명 \
+`--gin_param="utils.run.mesh_shape`: GPU 사용하는 경우 배치 수 \
+`--gin_param="utils.run.mesh_devices` : 등록할 GPU Device \
+`--gin_param="utils.run.batch_size`: 배치당 토큰 수 \
+`--gin_param="serialize_num_microbatches.tokens_per_microbatch_per_replica`: 마이크로 배치당 토큰 수 \
+`--gin_file` : config파일(gin 파일)경로
 
 
 ###Train example

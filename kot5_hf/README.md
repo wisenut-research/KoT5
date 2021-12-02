@@ -1,4 +1,5 @@
-# KoT5
+# KoT5(Pytorch)
+
 
 ##Setup
 ```
@@ -8,7 +9,6 @@ pip install -r requirements.txt
 
 
 ##Usage
-
 
 
 ###Tokenization
@@ -55,21 +55,21 @@ trainer = Seq2SeqTrainer(
 )
 ```
 
-###train
+###Train
 ```
 if do_train==True :
     trainer.train()
     trainer.save_model(output_dir + '/model')
 ```
 
-###evaluate
+###Evaluate
 ```
 if do_eval==True :
     metrics=trainer.evaluate()
     print(metrics)
 ```
 
-###predict
+###Predict
 ```
 if do_predict==True :
     model_dir = output_dir + '/model'
