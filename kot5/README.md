@@ -10,7 +10,9 @@ pip install -r requirements.txt
 
 
 ##Usage
+
 ###Options
+
 `--module_import`: task파일(데이터로드, 전처리, 매트릭 함수 등 포함) 경로 \
 `--model_dir`: tensorflow 버전 t5 모델 경로 \
 `--gin_param="MIXTURE_NAME`: task 파일에서 등록한 task 명 \
@@ -22,6 +24,7 @@ pip install -r requirements.txt
 
 
 ###Train example
+
 ```
 python -m t5.models.mesh_transformer_main \
 --module_import="kot5.tasks.nsmc_task" \
@@ -43,6 +46,7 @@ python -m t5.models.mesh_transformer_main \
 ```
 
 ###Evaluate example
+
 ```
 python -m t5.models.mesh_transformer_main \
 --module_import="kot5.tasks.nsmc_task" \
@@ -63,6 +67,7 @@ python -m t5.models.mesh_transformer_main \
 ```
 
 ###Predict example
+
 ```
 python -m t5.models.mesh_transformer_main \
 --module_import="kot5.tasks.nsmc_task" \

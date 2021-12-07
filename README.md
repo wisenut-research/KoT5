@@ -2,6 +2,7 @@
 **Korean Text-To-Text Transfer Transformer**
 
 ##Introdution
+
 ![](./imgs/t5_dataflow.png) \
 [T5(text-to-text-transfer-transformer)](https://arxiv.org/abs/1910.10683)
 는 입력과 출력이 항상 텍스트 문자열인 Text to Text 프레임워크를 사용하여 모든 NLP Task들을 일반화합니다.
@@ -16,6 +17,7 @@ Tensorflow 버전과 Pytorch 버전의 모델 실행 방법이 포함되어 있�
 
 
 ##Pre-trained Checkpoints
+
 | model | layers | hidden_size | parameter | tensorflow | pytorch
 | --- | --- | --- | --- | --- | --- |
 | KoT5-Small | 6 | 512 | 60M | [link](https://storage.googleapis.com/nlp_bucket-1/KoT5_models/small.zip) | [link](https://storage.googleapis.com/nlp_bucket-1/KoT5_models/small_hf.zip)
@@ -25,10 +27,12 @@ Tensorflow 버전과 Pytorch 버전의 모델 실행 방법이 포함되어 있�
 모델별로 기타 Config는 논문의 세팅에 따라 그대로 설정하였습니다.
 
 ##Usage
+
 [Tensorflow 버전](./kot5/README.md) \
 [Pytorch 버전](./kot5_hf/README.md)
 
 ##Experiment
+
 |                       | **NSMC**<br/>(acc) | **KorSTS**<br/>(spearman) | ***Summarization**<br/>(rouge f1) |
 | :-------------------- | :----------------: | :--------------------: | :----------------: | 
 | KoGPT[[1]](https://github.com/kakaobrain/kogpt)                |       89.59        |         87.92          |       -        | 
@@ -40,6 +44,7 @@ Tensorflow 버전과 Pytorch 버전의 모델 실행 방법이 포함되어 있�
 
 
 ##Citation
+
 모델을 연구용으로 사용하는 경우 아래와 같이 인용해주시기 바랍니다.
 ```
 @misc{wisenut2021kot5,
@@ -51,6 +56,7 @@ Tensorflow 버전과 Pytorch 버전의 모델 실행 방법이 포함되어 있�
 ```
 
 ##License
+
 **KoT5**는 [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 라이선스 하에 공개되어 있습니다. \
 모델을 사용할 경우 라이선스 내용을 준수해주세요. 라이선스 전문은 [LICENSE](./LICENSE) 파일에서 확인하실 수 있습니다.
 

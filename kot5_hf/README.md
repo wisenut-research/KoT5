@@ -2,6 +2,7 @@
 
 
 ##Setup
+
 ```
 conda install cudnn==8.2.1
 pip install -r requirements.txt
@@ -12,6 +13,7 @@ pip install -r requirements.txt
 
 
 ###Tokenization
+
 ```
 import torch
 from transformer.models.tokenization_t5 import T5Tokenizer
@@ -24,6 +26,7 @@ tokenized_target_text = tokenizer(target_text, truncation=True, padding='max_len
 ```
 
 ###Model
+
 ```
 from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments
 from transformers import T5ForConditionalGeneration, Trainer, TrainingArguments
@@ -56,6 +59,7 @@ trainer = Seq2SeqTrainer(
 ```
 
 ###Train
+
 ```
 if do_train==True :
     trainer.train()
@@ -63,6 +67,7 @@ if do_train==True :
 ```
 
 ###Evaluate
+
 ```
 if do_eval==True :
     metrics=trainer.evaluate()
@@ -70,6 +75,7 @@ if do_eval==True :
 ```
 
 ###Predict
+
 ```
 if do_predict==True :
     model_dir = output_dir + '/model'
