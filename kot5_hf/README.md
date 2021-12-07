@@ -1,7 +1,7 @@
 # KoT5(Pytorch)
 
 
-##Setup
+## Setup
 
 ```
 conda install cudnn==8.2.1
@@ -9,10 +9,10 @@ pip install -r requirements.txt
 ```
 
 
-##Usage
+## Usage
 
 
-###Tokenization
+### Tokenization
 
 ```
 import torch
@@ -25,7 +25,7 @@ tokenized_source_text = tokenizer(source_text, truncation=True, padding='max_len
 tokenized_target_text = tokenizer(target_text, truncation=True, padding='max_length', max_length=512)
 ```
 
-###Model
+### Model
 
 ```
 from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments
@@ -58,7 +58,7 @@ trainer = Seq2SeqTrainer(
 )
 ```
 
-###Train
+### Train
 
 ```
 if do_train==True :
@@ -66,7 +66,7 @@ if do_train==True :
     trainer.save_model(output_dir + '/model')
 ```
 
-###Evaluate
+### Evaluate
 
 ```
 if do_eval==True :
@@ -74,7 +74,7 @@ if do_eval==True :
     print(metrics)
 ```
 
-###Predict
+### Predict
 
 ```
 if do_predict==True :

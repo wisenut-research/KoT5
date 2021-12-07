@@ -1,7 +1,7 @@
 # KoT5(Tensorflow)
 반드시 사전학습에 사용된 모델 버전(t5==0.64, mesh_tensorflow==0.1.17)를 설치해야함
 
-##Setup
+## Setup
 
 ```
 conda install cudnn==8.2.1
@@ -9,9 +9,9 @@ pip install -r requirements.txt
 ```
 
 
-##Usage
+## Usage
 
-###Options
+### Options
 
 `--module_import`: task파일(데이터로드, 전처리, 매트릭 함수 등 포함) 경로 \
 `--model_dir`: tensorflow 버전 t5 모델 경로 \
@@ -23,7 +23,7 @@ pip install -r requirements.txt
 `--gin_file` : config파일(gin 파일)경로
 
 
-###Train example
+### Train example
 
 ```
 python -m t5.models.mesh_transformer_main \
@@ -45,7 +45,7 @@ python -m t5.models.mesh_transformer_main \
 --gin_param="utils.run.save_checkpoints_steps=100"
 ```
 
-###Evaluate example
+### Evaluate example
 
 ```
 python -m t5.models.mesh_transformer_main \
@@ -66,7 +66,7 @@ python -m t5.models.mesh_transformer_main \
 --gin_file="t5/models/gin/learning_rate_schedules/rsqrt_no_ramp_down.gin" \
 ```
 
-###Predict example
+### Predict example
 
 ```
 python -m t5.models.mesh_transformer_main \

@@ -1,7 +1,7 @@
 # KoT5
 **Korean Text-To-Text Transfer Transformer**
 
-##Introdution
+## Introdution
 
 ![](./imgs/t5_dataflow.png) \
 [T5(text-to-text-transfer-transformer)](https://arxiv.org/abs/1910.10683)
@@ -16,7 +16,7 @@ Tensorflow 버전과 Pytorch 버전의 모델 실행 방법이 포함되어 있�
 
 
 
-##Pre-trained Checkpoints
+## Pre-trained Checkpoints
 
 | model | layers | hidden_size | parameter | tensorflow | pytorch
 | --- | --- | --- | --- | --- | --- |
@@ -26,12 +26,12 @@ Tensorflow 버전과 Pytorch 버전의 모델 실행 방법이 포함되어 있�
 학습된 모델은 [Google Reaserch의 소스](https://github.com/google-research/text-to-text-transfer-transformer) 를 사용하여 학습되었으며,
 모델별로 기타 Config는 논문의 세팅에 따라 그대로 설정하였습니다.
 
-##Usage
+## Usage
 
 [Tensorflow 버전](./kot5/README.md) \
 [Pytorch 버전](./kot5_hf/README.md)
 
-##Experiment
+## Experiment
 
 |                       | **NSMC**<br/>(acc) | **KorSTS**<br/>(spearman) | ***Summarization**<br/>(rouge f1) |
 | :-------------------- | :----------------: | :--------------------: | :----------------: | 
@@ -43,7 +43,7 @@ Tensorflow 버전과 Pytorch 버전의 모델 실행 방법이 포함되어 있�
 *문서요약의 경우 [Dacon 문서 생성요약 경진대회](https://dacon.io/competitions/official/235671/data) 의 데이터와 매트릭을 사용했습니다. 
 
 
-##Citation
+## Citation
 
 모델을 연구용으로 사용하는 경우 아래와 같이 인용해주시기 바랍니다.
 ```
@@ -55,7 +55,7 @@ Tensorflow 버전과 Pytorch 버전의 모델 실행 방법이 포함되어 있�
 }
 ```
 
-##License
+## License
 
 **KoT5**는 [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 라이선스 하에 공개되어 있습니다. \
 모델을 사용할 경우 라이선스 내용을 준수해주세요. 라이선스 전문은 [LICENSE](./LICENSE) 파일에서 확인하실 수 있습니다.
